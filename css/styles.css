@@ -1,0 +1,248 @@
+/* CSS-переменные */
+
+:root {
+  --primary-text-color: #757575;
+  --primary-bg-color: #f5f5f5;
+  --title-text-color: #212121;
+  --header-color: #ffffff;
+  --accent-color: #2196f3;
+  --footer-color: #2f303a;
+}
+
+/* основные параметры body */
+
+.body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  background-color: var(--header-color);
+}
+
+/* убирание точек */
+
+.list,
+.connection-list,
+.benefits-list,
+.team-list,
+.connect-list,
+.button-list,
+.works-list {
+  list-style: none;
+}
+
+/* цвет  вторичного текста (заголовки) #212121 */
+/* цвет основного текста(которого больше) #757575*/
+/* цвет хедер  #FFFFFF*/
+/* цвет основного background: #f5f5f5*/
+/* цвет футера и основной шапки #2F303A*/
+/* цвет background наша команда #F5F4FA*/
+/* акцент #2196F3 */
+
+/* выделение лого */
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus,
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+/* навигация по сайту */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* связь с компанией */
+
+.connection-list .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.connection-list .link:hover,
+.connection-list .link:focus,
+.connect-list .address:hover,
+.connect-list .address:focus,
+.connect-list .link:hover,
+.connect-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero-title {
+  /* геометрия */
+
+  color: var(--header-color);
+  background-color: var(--footer-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /* динамика */
+}
+
+/*hero button */
+
+.button.primary {
+  color: var(--header-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button-list .button.secondary {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--header-color);
+  background-color: var(--accent-color);
+}
+
+/* section */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* benefits */
+
+.benefits-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* our team */
+
+.team-list {
+  background-color: #f5f4fa;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.works-list .link {
+  text-decoration: none;
+}
+
+.works-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-list .text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.logo-footer {
+  color: var(--header-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.connect-list .address,
+.connect-list .link {
+  color: var(--header-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.connect-list .link {
+  color: rgba(255, 255, 255, 0.6);
+}
